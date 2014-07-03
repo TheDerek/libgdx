@@ -45,6 +45,14 @@ public class Vector2 implements Serializable, Vector<Vector2> {
 		this.x = x;
 		this.y = y;
 	}
+	
+	/** Constructs a vector with the x and y values
+	 * from Vector3, disregarding the z value.
+	 * @param v The Vector3 the x and the y values will be taken from */
+	public Vector2 (Vector3 v) {
+		this.x = v.x;
+		this.y = v.y;
+	}
 
 	/** Constructs a vector from the given vector
 	 * @param v The vector */
